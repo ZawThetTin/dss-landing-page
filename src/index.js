@@ -4,7 +4,7 @@ const app = express()
 app.set('view engine', 'ejs')
 app.use(express.static('public'));
 
-const port = 3000 || process.env.PORT
+const port = process.env.PORT || 3000
 
 // routes
 app.get('/', (req, res) => {
