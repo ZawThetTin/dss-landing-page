@@ -1,0 +1,23 @@
+<header>
+	<div class="logo">
+		<img src="./img/logo_purple.png">
+	</div>
+	<nav>
+		<li><a href="/">Home</a></li>
+		<li><a href="/about">Who we are</a></li>
+		<li><a href="/services">What we do</a></li>
+		<li><a href="/contact">Meet our team</a></li>
+		<li><a href="/career">Contact</a></li>
+	</nav>
+</header>
+
+<script>
+	const currentLocation = location.href;
+	const links = document.querySelectorAll('nav li a');
+	console.log(links)
+	for (let link of links) {
+		if (link.href === currentLocation) {
+			link.classList.add('active');
+		}
+	}
+</script>
